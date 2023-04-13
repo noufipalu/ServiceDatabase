@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".WelcomeActivity">
+
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logged In As"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:layout_marginTop="175dp"
+        android:textColor="#C6C4C4"/>
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tvemail"
+        android:textColorHint="#F39DCFCF"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textSize="35dp"
+        android:textColor="#F4EDED"/>
+</LinearLayout>
