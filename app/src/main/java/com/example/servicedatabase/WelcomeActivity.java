@@ -37,7 +37,8 @@ public class WelcomeActivity extends AppCompatActivity {
         reference = database.getReference("Users");
         user = auth.getCurrentUser().getEmail();
 
-        reference.get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+        reference.get()
+                .addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<DataSnapshot> task) {
                 if (task.isSuccessful()){
